@@ -1,0 +1,22 @@
+
+index.php = /Library/WebServer/Documents/index.php
+
+CREATE TABLE `menu` (
+	`id` BIGINT(64) NOT NULL AUTO_INCREMENT,
+	`dish_name` VARCHAR(45),
+	`image` LONGBLOB ,
+	`ingrediants` VARCHAR(90),
+	`price` BIGINT(64),
+	`margin` BIGINT(64),
+	PRIMARY KEY (`id`)
+);
+
+img - Ashwini/restaurant-management/img/chai.jpg
+
+INSERT INTO menu
+       VALUES (2,'Chai',LOAD_FILE('~/Desktop/Ashwini/restaurant-management/img/chai.jpg'),'milk,water,sugar,ilaichi,patti',20,5);
+
+
+ TODO:
+ * Image not loading
+ * ID not auto increamenting
